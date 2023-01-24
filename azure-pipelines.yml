@@ -19,7 +19,7 @@ steps:
 - powershell: |
    $url = 'https://pulse-7.qtestnet.com/webhook/1aac2b57-92f5-41eb-aa28-5b9f87be67be'
    
-   $content = Get-Content "Macintosh HD/Users/alfredquerubin/Documents/qTestAutomation/Cucumber/Result/cucumber-report.json" -Raw
+   $content = Get-Content "C:\TestAutomation\ADO\Result\cucumber-report.json" -Raw
    $bytes = [System.Text.Encoding]::ASCII.GetBytes($content)
    $payload = [System.Convert]::ToBase64String($bytes)
    
